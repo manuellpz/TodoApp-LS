@@ -7,6 +7,8 @@ txtItem.addEventListener("keyup", (e) => {
   if (e.keyCode === 13) {
     addItem(e.target.value);
     showItems();
+    txtItem.value = '';
+    txtItem.focus();
   }
 });
 
