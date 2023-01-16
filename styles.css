@@ -1,39 +1,64 @@
 * {
-    font-family: 'Jetbrains Mono';
+  font-family: "JetBrains Mono";
+  font-weight: bold;
 }
 
 body {
-    background:rgb(32, 32, 32);
+  background: rgb(32, 32, 32);
 }
 
 .title {
-    text-align: center;
-    color:whitesmoke;
+  text-align: center;
+  color: whitesmoke;
 }
 
 .container {
-    width:60vw;
-    height: 75vw;
-    background:transparent;
-    border:1px solid silver;
-    border-radius: 5px;
-    margin:auto;
-    display: flex;
-    justify-content: center;
-    padding:10px;
+  width: 60vw;
+  background: transparent;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 10px;
 }
 
-#txtItem {
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-    border-radius:5px;
-    width: 65%;
-    height: 40px;
-    display:block;
-    margin:auto;
-    background:whitesmoke;
+#txt_item {
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 65%;
+  height: 40px;
+  display: block;
+  margin: auto;
+  background: whitesmoke;
 }
 #txtItem:focus {
-    border-bottom: 5px solid dodgerblue;
+  border-bottom: 5px solid dodgerblue;
+}
+.container_item {
+  background: whitesmoke;
+  width: 60vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.container_item p {
+  width: 70%;
+}
+
+.btn_delete {
+  width: 20%;
+  height: 50px;
+  background: rgb(247, 61, 55);
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
